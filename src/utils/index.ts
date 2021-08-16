@@ -1,1 +1,1 @@
-export * from "./getToken";
+export * from "./theme.utils";
