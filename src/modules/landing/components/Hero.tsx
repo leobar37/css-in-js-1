@@ -4,6 +4,7 @@ import { Heading, Text } from "@app/components/typography";
 import { getToken } from "@app/utils";
 import { Container } from "@app/components/Container";
 import NextImage from "next/image";
+import { Button } from "@app/components/button";
 const Wrapper = styled.section`
   position: relative;
   width: 100vw;
@@ -18,7 +19,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: row;
     ${Heading} , ${Text} {
-      margin: 10px 0;
+      margin: 15px 0;
     }
     &__left {
       max-width: 700px;
@@ -41,6 +42,8 @@ function Hero() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis
           </Text>
+          <Button>Empezar</Button>
+          <Button variant="outline">Ver cafés</Button>
         </div>
         <div className="content__image">
           <NextImage
